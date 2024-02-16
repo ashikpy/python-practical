@@ -3,16 +3,21 @@
 
 /* Format */
 
-h4 {
-  text-align: center;
-  /* captialize */
-  text-transform: capitalize;
+* {
+  margin: 0;
+}
+
+body {
+  background-color: black;
+}
+
+.section {
+  margin-bottom: 1rem;
 }
 
 pre {
   border: 0;
   padding: 0;
-  background-color: black;
   display: flex;
   flex-direction: column;
 }
@@ -22,15 +27,15 @@ pre code.hljs {
   overflow-x: auto;
   width: 100%;
   border: 3px black solid;
-  padding-left: 10px;
-  padding-right: 10px;
+  border-radius: 10px;
+  padding: 15px 15px;
 }
 
 code.hljs {
   padding: 3px 5px;
 }
 .hljs {
-  background: #ffffff;
+  background: #f5f5f5;
   color: #444;
 }
 .hljs-comment {
@@ -108,31 +113,38 @@ code.hljs {
 
 h1 {
   text-align: center;
-  background-color: rgb(0, 0, 0);
-  padding: 200p;
+  background-color: #1e40af;
+  border-bottom-left-radius: 50%;
+  border-bottom-right-radius: 50%;
+  padding: 1rem;
+  line-height: 28px;
   margin: 0;
   color: white;
+  margin-bottom: 0.5em;
 }
 
 h4 {
   font-weight: 600;
   margin: 0;
+  text-align: center;
+  text-transform: capitalize;
+  margin-top: 1.2rem;
+  margin-bottom: 1.2rem;
+  color: white;
 }
 
 .container {
   max-width: 100%;
   display: flex;
   flex-direction: column;
-}
-
-.section {
-  margin-top: 2rem;
+  margin-left: 0.5em;
+  margin-right: 0.5em;
 }
 
 code {
-  font-family: "Fira Mono";
   font-weight: 500;
   background-color: aqua;
+  font-size: 14px;
 }
 
 hr {
@@ -141,17 +153,21 @@ hr {
   background-color: black;
 }
 
+footer {
+  border-top-left-radius: 12px;
+  border-top-right-radius: 12px;
+
+  background-color: rgb(0, 0, 0);
+  padding: 1px;
+  text-align: center;
+}
+
 footer > h4 {
-  background-color: black;
   color: white;
 }
 
 a {
   color: hotpink;
-}
-
-.background-main {
-  background-color: b;
 }
 
 @media (min-width: 768px) {
