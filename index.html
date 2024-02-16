@@ -24,8 +24,7 @@
           python
         </h4>
         <div class="master-container">
-          <pre class="container"><code class="language-python">
-my_integer = 10
+          <pre class="container"><code class="language-python">my_integer = 10
 my_float = 3.14
 my_string = "Hello, World!"
 my_boolean = True
@@ -44,8 +43,7 @@ print("List:", my_list, type(my_list))
 print("Tuple:", my_tuple, type(my_tuple))
 print("Dictionary:", my_dict, type(my_dict))
 print("Set:", my_set, type(my_set))
-print("Complex Number:", my_complex, type(my_complex))
-              </code>
+print("Complex Number:", my_complex, type(my_complex))</code>
               </pre>
         </div>
       </div>
@@ -57,16 +55,16 @@ print("Complex Number:", my_complex, type(my_complex))
             numbers in python
           </h4>
           <pre class="container">
-            <code class="language-python">
-num1 = 10
+            <code class="language-python">num1 = 10
 num2 = 5
 addition = num1 + num2
-subtraction = num1 - num
-multiplication = num1 * num
-division = num1 / num
-integer_division = num1 // num
-modulus = num1 % num
-exponentiation = num1 ** num
+subtraction = num1 - num2
+multiplication = num1 * num2
+division = num1 / num2
+integer_division = num1 // num2
+modulus = num1 % num2
+exponentiation = num1 ** num2
+
 print("Operations with", num1, num2)
 print("Addition" + addition)
 print("subtraction" + subtraction)
@@ -74,8 +72,7 @@ print("multiplication" + multiplication)
 print("division" + division)
 print("integer_division" + integer_division)
 print("modulus" + modulus)
-print("exponentiation" +exponentiation)
-            </code>
+print("exponentiation" +exponentiation)</code>
           </pre>
         </div>
         <div class="container">
@@ -86,15 +83,13 @@ print("exponentiation" +exponentiation)
               accessing substring from a given string.
             </h4>
 
-            <pre><code class="language-python">
-my_string = "Hello, "
+            <pre><code class="language-python">my_string = "Hello, "
 
 my_string += "World!"
 print("Concatenated String:", my_string)
 
 substring = my_string[7:]
-print("Substring from index 7 to end:", substring)
-            </code></pre>
+print("Substring from index 7 to end:", substring)</code></pre>
           </div>
         </div>
         <div class="container">
@@ -104,21 +99,16 @@ print("Substring from index 7 to end:", substring)
               4.Write a python script to print the current date in following
               format "Sun May 29 02:26:23 IST 2017"
             </h4>
-            <pre><code class="language-python">
-import datetime
+            <pre><code class="language-python">import datetime
 
 current_datetime = datetime.datetime.now()
-
-months = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec']
-days = ['Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat', 'Sun']
-
 formatted_date_time = current_datetime.strftime("%a %b %d %H:%M:%S %Z %Y")
 
 day_of_week_index = current_datetime.weekday()
-month_index = current_datetime.month
 
-print(f"{days[day_of_week_index]} {months[month_index - 1]} {formatted_date_time}")
-            </code></pre>
+temp_lst = formatted_date_time.split()
+temp_lst.insert(4, "IST")
+print(" ".join(temp_lst))</code></pre>
           </div>
         </div>
         <div class="container">
@@ -128,8 +118,7 @@ print(f"{days[day_of_week_index]} {months[month_index - 1]} {formatted_date_time
               5. write a python program to create, append and remove lists in
               python
             </h4>
-            <pre><code class="language-python">
-my_list = [1, 2, 3, 4, 5]
+            <pre><code class="language-python">my_list = [1, 2, 3, 4, 5]
 print("Initial List:", my_list)
 
 my_list.append(6)
@@ -140,8 +129,7 @@ print("List after removing 3:", my_list)
 
 removed_element = my_list.pop(1)
 print("List after removing element at index 1:", my_list)
-print("Removed element:", removed_element)
-            </code></pre>
+print("Removed element:", removed_element)</code></pre>
           </div>
         </div>
         <div class="container">
@@ -150,8 +138,7 @@ print("Removed element:", removed_element)
             <h4>
               6. write a program to demonstrate working with tuples in python
             </h4>
-            <pre><code class="language-python">
-my_tuple = (1, 2, 3, 4, 5)
+            <pre><code class="language-python">my_tuple = (1, 2, 3, 4, 5)
 print("Initial Tuple:", my_tuple)
 print("First element:", my_tuple[0])
 print("Last element:", my_tuple[-1])
@@ -175,14 +162,13 @@ print("Repeated Tuple:", repeated_tuple)
 
 print("Elements in the tuple:")
 for element in my_tuple:
-print(element)
+    print(element)
 
 tuple_to_list = list(my_tuple)
 print("Converted Tuple to List:", tuple_to_list)
 
 list_to_tuple = tuple(tuple_to_list)
-print("Converted List to Tuple:", list_to_tuple)
-            </code></pre>
+print("Converted List to Tuple:", list_to_tuple)</code></pre>
           </div>
         </div>
         <div class="container">
@@ -192,37 +178,36 @@ print("Converted List to Tuple:", list_to_tuple)
               7. write a program to demonstrate working with dictionaries in
               python
             </h4>
-            <pre><code class="language-python">
-my_dict = {'name': 'John', 'age': 30, 'city': 'New York'}
+            <pre><code class="language-python">my_dict = {"name": "John", "age": 30, "city": "New York"}
 print("Initial Dictionary:", my_dict)
 
-print("Name:", my_dict['name'])
-print("Age:", my_dict['age'])
+print("Name:", my_dict["name"])
+print("Age:", my_dict["age"])
 
-my_dict['age'] = 35
+my_dict["age"] = 35
 print("Updated Dictionary:", my_dict)
 
-my_dict['gender'] = 'Male'
+my_dict["gender"] = "Male"
 print("Dictionary after adding 'gender' key:", my_dict)
 
-removed_value = my_dict.pop('city')
+removed_value = my_dict.pop("city")
 print("Dictionary after removing 'city' key:", my_dict)
 print("Removed value:", removed_value)
 
-print("Is 'name' a key in the dictionary?", 'name' in my_dict)
-print("Is 'city' a key in the dictionary?", 'city' in my_dict)
+print("Is 'name' a key in the dictionary?", "name" in my_dict)
+print("Is 'city' a key in the dictionary?", "city" in my_dict)
 
 print("Keys in the dictionary:")
 for key in my_dict.keys():
-print(key)
+    print(key)
 
 print("Values in the dictionary:")
 for value in my_dict.values():
-print(value)
+    print(value)
 
 print("Key-Value pairs in the dictionary:")
 for key, value in my_dict.items():
-print(key, ":", value)
+    print(key, ":", value)
 
 print("Length of Dictionary:", len(my_dict))
 
@@ -230,27 +215,23 @@ copied_dict = my_dict.copy()
 print("Copied Dictionary:", copied_dict)
 
 my_dict.clear()
-print("Cleared Dictionary:", my_dict)
-      </code></pre>
+print("Cleared Dictionary:", my_dict)</code></pre>
           </div>
         </div>
         <div class="container">
           <div class="master-container">
             <hr />
             <h4>8. write a python program to find largest of three numbers</h4>
-            <pre><code class="language-python">
-def find_largest(num1, num2, num3):
-# Using the max() function to find the largest number
-largest_number = max(num1, num2, num3)
-return largest_number
-
+            <pre><code class="language-python">def find_largest(num1, num2, num3):
+    largest_number = max(num1, num2, num3)
+    return largest_number
+            
 num1 = float(input("Enter first number: "))
 num2 = float(input("Enter second number: "))
 num3 = float(input("Enter third number: "))
 
 largest = find_largest(num1, num2, num3)
-print("The largest number is:", largest)
-            </code></pre>
+print("The largest number is:", largest)</code></pre>
           </div>
         </div>
         <div class="container">
@@ -260,14 +241,15 @@ print("The largest number is:", largest)
               9. write a python program to convert temperature to and from
               celsius to fahrenheit.
             </h4>
-            <pre><code class="language-python">
-def celsius_to_fahrenheit(celsius):
-fahrenheit = (celsius * 9/5) + 32
-return fahrenheit
+            <pre><code class="language-python">def celsius_to_fahrenheit(celsius):
+    fahrenheit = (celsius * 9 / 5) + 32
+    return fahrenheit
+
 
 def fahrenheit_to_celsius(fahrenheit):
-celsius = (fahrenheit - 32) * 5/9
-return celsius
+    celsius = (fahrenheit - 32) * 5 / 9
+    return celsius
+
 
 celsius = float(input("Enter temperature in Celsius: "))
 fahrenheit = celsius_to_fahrenheit(celsius)
@@ -275,8 +257,7 @@ print(f"{celsius}°C is equal to {fahrenheit}°F")
 
 fahrenheit = float(input("Enter temperature in Fahrenheit: "))
 celsius = fahrenheit_to_celsius(fahrenheit)
-print(f"{fahrenheit}°F is equal to {celsius}°C")
-            </code></pre>
+print(f"{fahrenheit}°F is equal to {celsius}°C")</code></pre>
           </div>
         </div>
         <div class="container">
@@ -286,17 +267,15 @@ print(f"{fahrenheit}°F is equal to {celsius}°C")
               10. write a python program to construct the following pattern
               using nested for loop.
             </h4>
-            <pre><code class="language-python">
-rows = 5
+            <pre><code class="language-python">rows = 5
 for i in range(1, rows + 1):
-for j in range(1, i + 1):
-    print("*", end=" ")
-print()
+    for j in range(1, i + 1):
+        print("*", end=" ")
+    print()
 for i in range(rows - 1, 0, -1):
-for j in range(1, i + 1):
-    print("*", end=" ")
-print()
-            </code></pre>
+    for j in range(1, i + 1):
+        print("*", end=" ")
+    print()</code></pre>
           </div>
         </div>
         <div class="container">
@@ -305,20 +284,18 @@ print()
             <h4>
               11. write a python program to print prime numbers less than 20
             </h4>
-            <pre><code class="language-python">
-def is_prime(num):
-if num <= 1:
-    return False
-for i in range(2, int(num ** 0.5) + 1):
-    if num % i == 0:
+            <pre><code class="language-python">def is_prime(num):
+    if num <= 1:
         return False
-return True
+    for i in range(2, int(num ** 0.5) + 1):
+        if num % i == 0:
+            return False
+    return True
 
 print("Prime numbers less than 20:")
 for i in range(2, 20):
-if is_prime(i):
-    print(i, end=" ")
-            </code></pre>
+    if is_prime(i):
+        print(i, end=" ")</code></pre>
           </div>
         </div>
         <div class="container">
@@ -328,23 +305,21 @@ if is_prime(i):
               12. Write a python program to find factorial of a numbers using
               recursion.
             </h4>
-            <pre><code class="language-python">
-def factorial(n):
-if n == 0:
-    return 1
-else:
-    return n * factorial(n - 1)
+            <pre><code class="language-python">def factorial(n):
+    if n == 0:
+        return 1
+    else:
+        return n * factorial(n - 1)
 
 num = int(input("Enter a number: "))
 
 if num < 0:
-print("Factorial is not defined for negative numbers.")
+    print("Factorial is not defined for negative numbers.")
 elif num == 0:
-print("The factorial of 0 is 1.")
+    print("The factorial of 0 is 1.")
 else:
-result = factorial(num)
-print(f"The factorial of {num} is {result}.")
-            </code></pre>
+    result = factorial(num)
+    print(f"The factorial of {num} is {result}.")</code></pre>
           </div>
         </div>
         <div class="container">
@@ -356,22 +331,20 @@ print(f"The factorial of {num} is {result}.")
               not the triangle is a right angled triangle (use Pythagorean
               theorem)
             </h4>
-            <pre><code class="language-python">
-def is_right_triangle(a, b, c):
-if a**2 + b**2 == c**2 or a**2 + c**2 == b**2 or b**2 + c**2 == a**2:
-    return True
-else:
-    return False
+            <pre><code class="language-python">def is_right_triangle(a, b, c):
+    if a**2 + b**2 == c**2 or a**2 + c**2 == b**2 or b**2 + c**2 == a**2:
+        return True
+    else:
+        return False
 
 a = float(input("Enter the length of side 'a': "))
 b = float(input("Enter the length of side 'b': "))
 c = float(input("Enter the length of side 'c': "))
 
 if is_right_triangle(a, b, c):
-print("The triangle is a right-angled triangle.")
+    print("The triangle is a right-angled triangle.")
 else:
-print("The triangle is not a right-angled triangle.")
-            </code></pre>
+    print("The triangle is not a right-angled triangle.")</code></pre>
           </div>
         </div>
         <div class="container">
@@ -381,29 +354,25 @@ print("The triangle is not a right-angled triangle.")
               14. write a python program to define a module to find Fibonacci
               numbers and import the module to another program
             </h4>
-            <pre><code class="language-python">
-# Fibonacci.py
+            <pre><code class="language-python"># Fibonacci.py
 def fibonacci_sequence(n):
-fib_sequence = [0, 1]
-while len(fib_sequence) < n:
-    fib_sequence.append(fib_sequence[-1] + fib_sequence[-2])
-return fib_sequence
+    fib_sequence = [0, 1]
+    while len(fib_sequence) < n:
+        fib_sequence.append(fib_sequence[-1] + fib_sequence[-2])
+    return fib_sequence
 
 def fibonacci_number(n):
-if n <= 0:
-    return "Invalid input. Please enter a positive integer."
-fib_sequence = fibonacci_sequence(n)
-return fib_sequence[-1]
-            </code></pre>
-            <pre><code class="language-python">
-#main.py
+    if n <= 0:
+        return "Invalid input. Please enter a positive integer."
+    fib_sequence = fibonacci_sequence(n)
+    return fib_sequence[-1]</code></pre>
+            <pre><code class="language-python">#main.py
 import fibonacci
 
 # Example usage of the module
 n = int(input("Enter the value of n to find the nth Fibonacci number: "))
 fibonacci_num = fibonacci.fibonacci_number(n)
-print(f"The {n}th Fibonacci number is: {fibonacci_num}")
-            </code></pre>
+print(f"The {n}th Fibonacci number is: {fibonacci_num}")</code></pre>
           </div>
         </div>
         <div class="container">
@@ -413,8 +382,7 @@ print(f"The {n}th Fibonacci number is: {fibonacci_num}")
               15. Write a python program to define a module and import a
               specific function in that module to another program.
             </h4>
-            <pre><code class="language-python">
-# Module.py
+            <pre><code class="language-python"># Module.py
 def greet(name):
 return f"Hello, {name}!"
 
@@ -422,16 +390,13 @@ def add(a, b):
 return a + b
 
 def subtract(a, b):
-return a - b
-            </code></pre>
-            <pre><code class="language-python">
-# main.py
+return a - b</code></pre>
+            <pre><code class="language-python"># main.py
 from my_module import greet
 
 name = input("Enter your name: ")
 message = greet(name)
-print(message)
-            </code></pre>
+print(message)</code></pre>
           </div>
         </div>
         <div class="container">
@@ -445,21 +410,20 @@ print(message)
               open("input.txt") as input. with open("output.txt","w") as for
               line in input: output write(line) print("JobDone")
             </h4>
-            <pre><code class="language-python">
-input_file_name = input("Enter the name of the input file: ")
+            <pre><code class="language-python">input_file_name = input("Enter the name of the input file: ")
 output_file_name = input("Enter the name of the output file: ")
 
-# Copy contents of the input file to the output file
 try:
-with open(input_file_name, 'r') as input_file, open(output_file_name, 'w') as output_file:
-    for line in input_file:
-        output_file.write(line)
-print("Contents copied successfully from", input_file_name, "to", output_file_name)
+    with open(input_file_name, "r") as input_file, open(
+        output_file_name, "w"
+    ) as output_file:
+        for line in input_file:
+            output_file.write(line)
+    print("Contents copied successfully from", input_file_name, "to", output_file_name)
 except FileNotFoundError:
-print("File not found. Please enter valid file names.")
+    print("File not found. Please enter valid file names.")
 except Exception as e:
-print("An error occurred:", str(e))
-            </code></pre>
+    print("An error occurred:", str(e))</code></pre>
           </div>
         </div>
         <div class="container">
@@ -469,27 +433,26 @@ print("An error occurred:", str(e))
               17. Write a program that inputs a text file. The program should
               print all the unique words in the file in alphabetical order
             </h4>
-            <pre><code class="language-python">
-def print_unique_words(file_name):
-unique_words = set()
-try:
-    with open(file_name, 'r') as file:
-        for line in file:
-            words = line.split()
-            for word in words:
-                unique_words.add(word.strip().lower())
-    unique_words_list = sorted(list(unique_words))
-    print("Unique words in alphabetical order:")
-    for word in unique_words_list:
-        print(word)
-except FileNotFoundError:
-    print("File not found. Please enter a valid file name.")
-except Exception as e:
-    print("An error occurred:", str(e))
+            <pre><code class="language-python">def print_unique_words(file_name):
+    unique_words = set()
+    try:
+        with open(file_name, "r") as file:
+            for line in file:
+                words = line.split()
+                for word in words:
+                    unique_words.add(word.strip().lower())
+        unique_words_list = sorted(list(unique_words))
+        print("Unique words in alphabetical order:")
+        for word in unique_words_list:
+            print(word)
+    except FileNotFoundError:
+        print("File not found. Please enter a valid file name.")
+    except Exception as e:
+        print("An error occurred:", str(e))
+
 
 file_name = input("Enter the name of the text file: ")
-print_unique_words(file_name)
-            </code></pre>
+print_unique_words(file_name)</code></pre>
           </div>
         </div>
         <div class="container">
@@ -529,26 +492,23 @@ print(f"The Roman numeral representation of {num} is: {roman_numeral}")
             <h4>
               19. implementing programs using strings (reverse, palindrome.)
             </h4>
-            <pre><code class="language-python">
-def reverse_string(string):
-return string[::-1]
+            <pre><code class="language-python">def reverse_string(string):
+    return string[::-1]
 
-# Example usage:
 input_string = input("Enter a string to reverse: ")
 reversed_string = reverse_string(input_string)
 print("Reversed string:", reversed_string)
 
+# Palindrome
 def is_palindrome(string):
-reversed_string = string[::-1]
-return string == reversed_string
+    reversed_string = string[::-1]
+    return string == reversed_string
 
-# Example usage:
 input_string = input("Enter a string to check if it's a palindrome: ")
 if is_palindrome(input_string):
-print("The string is a palindrome.")
+    print("The string is a palindrome.")
 else:
-print("The string is not a palindrome.")
-            </code></pre>
+    print("The string is not a palindrome.")</code></pre>
           </div>
         </div>
         <div class="container">
@@ -558,16 +518,13 @@ print("The string is not a palindrome.")
               20. Implementing programs using written modules and python
               standard libraries (pandas, numpy)
             </h4>
-            <pre><code class="language-python">
-import pandas as pd
+            <pre><code class="language-python">import pandas as pd
 
 df = pd.read_csv('data.csv')
       
 print("First few rows of the DataFrame:")
-print(df.head())
-            </code></pre>
-            <pre><code class="language-python">
-import numpy as np
+print(df.head())</code></pre>
+            <pre><code class="language-python">import numpy as np
 
 data = np.array([1, 2, 3, 4, 5])
 
@@ -575,8 +532,7 @@ mean = np.mean(data)
 std_dev = np.std(data)
 
 print("Mean:", mean)
-print("Standard Deviation:", std_dev)
-            </code></pre>
+print("Standard Deviation:", std_dev)</code></pre>
           </div>
         </div>
         <hr />
