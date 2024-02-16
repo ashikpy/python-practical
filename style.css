@@ -1,0 +1,162 @@
+@import url("https://fonts.googleapis.com/css2?family=Fira+Mono:wght@400;500;700&display=swap");
+
+/* Format */
+
+h4 {
+  text-align: center;
+  /* captialize */
+  text-transform: capitalize;
+}
+
+pre {
+  border: 0;
+  padding: 0;
+  background-color: black;
+  display: flex;
+  flex-direction: column;
+}
+
+pre code.hljs {
+  display: block;
+  overflow-x: auto;
+  width: 100%;
+  border: 3px black solid;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+code.hljs {
+  padding: 3px 5px;
+}
+.hljs {
+  background: #ffffff;
+  color: #444;
+}
+.hljs-comment {
+  color: #697070;
+}
+.hljs-punctuation,
+.hljs-tag {
+  color: #444a;
+}
+.hljs-tag .hljs-attr,
+.hljs-tag .hljs-name {
+  color: #444;
+}
+.hljs-attribute,
+.hljs-doctag,
+.hljs-keyword,
+.hljs-meta .hljs-keyword,
+.hljs-name,
+.hljs-selector-tag {
+  font-weight: 700;
+}
+.hljs-deletion,
+.hljs-number,
+.hljs-quote,
+.hljs-selector-class,
+.hljs-selector-id,
+.hljs-string,
+.hljs-template-tag,
+.hljs-type {
+  color: #800;
+}
+.hljs-section,
+.hljs-title {
+  color: #800;
+  font-weight: 700;
+}
+.hljs-link,
+.hljs-operator,
+.hljs-regexp,
+.hljs-selector-attr,
+.hljs-selector-pseudo,
+.hljs-symbol,
+.hljs-template-variable,
+.hljs-variable {
+  color: #ab5656;
+}
+.hljs-literal {
+  color: #695;
+}
+.hljs-addition,
+.hljs-built_in,
+.hljs-bullet,
+.hljs-code {
+  color: #397300;
+}
+.hljs-meta {
+  color: #1f7199;
+}
+.hljs-meta .hljs-string {
+  color: #38a;
+}
+.hljs-emphasis {
+  font-style: italic;
+}
+.hljs-strong {
+  font-weight: 700;
+}
+
+/* Main */
+
+* {
+  box-sizing: border-box;
+  font-family: "poppins", sans-serif;
+}
+
+h1 {
+  text-align: center;
+  background-color: rgb(0, 0, 0);
+  padding: 200p;
+  margin: 0;
+  color: white;
+}
+
+h4 {
+  font-weight: 600;
+  margin: 0;
+}
+
+.container {
+  max-width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.section {
+  margin-top: 2rem;
+}
+
+code {
+  font-family: "Fira Mono", monospace;
+  font-weight: 500;
+  background-color: aqua;
+}
+
+hr {
+  height: 4px;
+  width: 100%;
+  background-color: black;
+}
+
+footer > h4 {
+  background-color: black;
+  color: white;
+}
+
+a {
+  color: hotpink;
+}
+
+.background-main {
+  background-color: b;
+}
+
+@media (min-width: 768px) {
+  .container {
+    width: 768px;
+    max-width: 768px;
+    margin: auto;
+  }
+}
